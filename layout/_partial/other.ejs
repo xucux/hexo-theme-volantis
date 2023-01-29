@@ -1,0 +1,21 @@
+<script>
+
+    var tempTitle = "";
+
+    window.onblur = function() {
+        document.title="w(ﾟДﾟ)w 快回来呀！";
+    }
+
+    window.onfocus = function () {
+        document.title = "✧(≖ ◡ ≖✿)";
+        let t = document.querySelector('meta[property="og:title"]').getAttribute('content');
+        setTimeout(()=>{document.title = t},1500)
+    }
+
+    window.onload  = function () {
+        document.title="(๑•̀ㅂ•́)و✧";
+        let t = document.querySelector('meta[property="og:title"]').getAttribute('content');
+        setTimeout(()=>{document.title = t},2000)
+    }
+
+</script>
