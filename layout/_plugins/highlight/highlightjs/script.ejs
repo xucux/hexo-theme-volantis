@@ -1,3 +1,7 @@
+<% getList(theme.plugins.highlightjs.multiJs).forEach(function(item) { %>
+  <%- js(item) %>
+<% }) %>
+
 <script>
 <% if (theme.plugins.highlightjs.css) { %>
   volantis.css("<%- theme.plugins.highlightjs.css %>");
