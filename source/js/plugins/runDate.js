@@ -12,6 +12,7 @@ function runTimeFunc(now) {
 } 
 ( function(){
     let now = new Date();
-    setInterval(runTimeFunc(now),250);
+    // 需要遵循内容安全策略( CSP )
+    window.setInterval( function() { runTimeFunc(now); },250);
     console.log("运行时间-start")
 })();
